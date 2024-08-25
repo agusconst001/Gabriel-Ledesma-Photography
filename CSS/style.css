@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=NombreDeLaFuente:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NombreDeLaFuente', sans-serif; /* Usa la fuente importada */
+}
+
+/* General */
+body {
+    background-color: #333;
+    color: aliceblue;
+}
+
+/* Header */
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    width: 100%;
+    height: 80px; /* Ajusta la altura según el diseño del header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+    z-index: 1000; /* Asegura que el header esté encima del contenido */
+}
+
+.header-transparent {
+    background-color: transparent; /* Fondo transparente para la portada */
+}
+
+.header-black {
+    background-color: black; /* Fondo negro al hacer scroll */
+}
+
+.logo img {
+    width: 80px;
+}
+
+/* Barra de navegación */
+.barra-de-navegacion {
+    display: flex;
+}
+
+.barra-de-navegacion ul {
+    display: flex;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.barra-de-navegacion ul li {
+    margin-left: 10px; /* Espacio entre los elementos de la lista */
+}
+
+.barra-de-navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.barra-de-navegacion a:hover {
+    color: #ffcc00; /* Color para hover */
+}
+
+/* Portada */
+.portada-inicio {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    display: flex;
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 0 20px; /* Añade padding a los lados */
+    background-image: url('/Multimedia/camara-portada.jpg');
+    background-size: cover;
+    background-position: center;
+    color: aliceblue; /* Color de texto en la portada */
+}
+
+/* Pseudo-elemento para el filtro oscuro */
+.portada-inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro negro con opacidad del 50% */
+    z-index: 1; /* Asegura que el filtro esté encima de la imagen de fondo */
+}
+
+/* Asegura que el contenido esté encima del filtro */
+.portada-inicio > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo del h1 en la portada */
+.portada-inicio h1 {
+    font-size: 48px; /* Tamaño de fuente aumentado */
+    margin: 3cm 0; /* Margen superior e inferior de 3 cm */
+}
+
+/* Otros estilos */
+h2 {
+    margin: 30px 0; /* Margen superior e inferior */
+}
+
+p {
+    margin: 30px 0; /* Margen superior e inferior */
+    padding: 10px;
+}
