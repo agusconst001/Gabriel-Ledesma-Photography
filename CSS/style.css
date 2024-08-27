@@ -76,7 +76,7 @@ header {
     align-items: flex-start; /* Alinea el contenido a la izquierda */
     height: 100vh; /* Ocupa toda la altura de la ventana */
     padding: 0 20px; /* Añade padding a los lados */
-    background-image: url('/Multimedia/camara-portada.jpg');
+    background-image: url('../Multimedia/camara-portada.jpg');
     background-size: cover;
     background-position: center;
     color: aliceblue; /* Color de texto en la portada */
