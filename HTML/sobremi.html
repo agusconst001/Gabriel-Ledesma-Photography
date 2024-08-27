@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <!--BARRA DE NAVEGACION-->
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="../HTML/sobremi.html">Servicios</a></li>
-            <li><a href="../HTML/servicios.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header class="header-transparent">
+        <!-- BARRA DE NAVEGACION -->
+        <div class="logo">
+            <img src="/Multimedia/logo/LG-logocompleto.png" alt="Logo de Gabriel Ledesma Photography">
+        </div>
+        <nav class="barra-de-navegacion">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/sobremi.html">Servicios</a></li>
+                <li><a href="../HTML/servicios.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <section><h1>Conoce a Gabriel Ledesma</h1>
         <p>Gabriel Ledesma es un fotógrafo apasionado con un ojo para el detalle y un amor por capturar la belleza en lo cotidiano. Su viaje en la fotografía comenzó hace más de diez años, cuando descubrió su talento natural para la composición y la luz. Desde entonces, ha dedicado su vida a perfeccionar su arte, trabajando en una amplia gama de proyectos que van desde bodas y eventos hasta fotografía comercial y artística.</p>
     </section>
@@ -39,6 +44,18 @@
         <footer>
             <p>&copy; 2024 Gabriel Ledesma Photography - Todos los derechos reservados</p>
         </footer>
+        <script>
+            document.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) { // Cambia el valor según cuando quieras que el fondo cambie
+                    header.classList.remove('header-transparent');
+                    header.classList.add('header-black');
+                } else {
+                    header.classList.remove('header-black');
+                    header.classList.add('header-transparent');
+                }
+            });
+        </script>
     </section>
 </body>
 </html>
