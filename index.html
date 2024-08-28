@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=NombreDeLaFuente:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="/Multimedia/logo/LG-logosimple.png" type="image/png">
     <title>Gabriel Ledesma Photography</title>
 </head>
 <body>
     <header class="header-transparent">
         <!-- BARRA DE NAVEGACION -->
         <div class="logo">
-            <img src="./Multimedia/logo/LG-logocompleto.png" alt="Logo de Gabriel Ledesma Photography">
+            <img src="/Multimedia/logo/LG-logocompleto.png" alt="Logo de Gabriel Ledesma Photography">
         </div>
         <nav class="barra-de-navegacion">
             <ul>
@@ -32,16 +33,49 @@
             <!-- Galería Destacada -->
             <h2>Galería Destacada</h2>
             <p>Te invitamos a explorar una selección de nuestras mejores fotos en la galería destacada. Desde bodas íntimas hasta retratos personales, cada imagen es una ventana a la pasión y el talento que ponemos en cada clic.</p>
+            <img src="/Multimedia/ciudad-portada.jpg" alt="">
+            <button>Ver portafolio</button>
         </section>
         <section>
             <!-- Conéctate con Nosotros -->
             <h2>Conéctate con Nosotros</h2>
+            <img src="/Multimedia/flor.jpg" alt="">
             <p>Síguenos en nuestras redes sociales para ver las últimas actualizaciones y proyectos en los que estamos trabajando. Únete a nuestra comunidad de amantes de la fotografía y descubre cómo transformamos momentos en eternidad.</p>
         </section>
     </main>
     <footer>
+        <div class="footer-container">
+            <!-- Sección del Logo -->
+            <div class="footer-logo">
+                <img src="../Multimedia/logo/LG-logocompleto.png" alt="Logo de Gabriel Ledesma Photography">
+            </div>
+    
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-social">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li>Celular: +123 456 7890</li>
+                    <li><a href="https://www.instagram.com/tuusuario" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/tuusuario" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+    
+            <!-- Sección Dónde Estamos -->
+            <div class="footer-location">
+                <h3>Dónde Estamos</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3356495210995!2d-122.41941508468263!3d37.77492977975805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c1ebc0e41%3A0x4d44f0c1b1f1c977!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1591958192674!5m2!1sen!2s" 
+                    width="200" 
+                    height="150" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
         <p>&copy; 2024 Gabriel Ledesma Photography - Todos los derechos reservados</p>
     </footer>
+    
     <script>
         document.addEventListener('scroll', function() {
             const header = document.querySelector('header');

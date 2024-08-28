@@ -115,3 +115,47 @@ p {
     margin: 30px 0; /* Margen superior e inferior */
     padding: 10px;
 }
+
+/*----- footer-----*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 5px 0;
+}
+
+.footer-location iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
